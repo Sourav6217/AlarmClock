@@ -1,0 +1,160 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    background-color: wheat;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+select {
+    appearance: none;
+    outline: none;
+    background-color: wheat;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    color: #0E141B;
+    border: 2px solid black;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+/* End Global Styles */
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0E141B;
+}
+
+.clock-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1890FF;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.current-time {
+    font-size: 2rem;
+    color: #0E141B;
+    font-weight: bold;
+}
+
+.alarm-form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.submit-button {
+    border: 2px solid black;
+    border-radius: 2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: wheat;
+    color: #0E141B;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.set-alarm-container {
+    width: 100%;
+}
+
+.set-alarm-container-title {
+    color: #0E141B;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.alarm {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.alarm .delete-alarm {
+    border-radius: 2rem;
+    background-color: rgba(230, 13, 13, 0.918);
+    font-weight: bold;
+    color: wheat;
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.time {
+    color: #0E141B;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn:focus,
+.btn:hover,
+.submit-button:focus,
+.submit-button:hover,
+.delete-alarm:focus,
+.delete-alarm:hover {
+    transform: scale(1.05);
+}
+
+.page-title {
+    background-color: #0E141B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: wheat;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style for screens with a minimum width of 600px */
+@media only screen and (min-width: 600px) {
+    .main-container {
+        padding: 2rem;
+    }
+    .clock-container {
+        justify-content: center;
+        border-radius: 50px;
+        width: 450px;
+        min-height: auto;
+    }
+}
